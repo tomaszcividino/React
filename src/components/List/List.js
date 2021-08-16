@@ -1,12 +1,11 @@
 import React from 'react';
-import styles from './App.scss';
-import App from '../App.js'
+import Hero from '../Hero/Hero.js'
 
 class List extends React.Component {
   render() {
     return (
-      <section className={styles.component}>
-        <h2 className={styles.subtitle}>Things to do</h2>
+      <section>
+        <Hero title={this.props.title} />
       </section>
     )
   }
